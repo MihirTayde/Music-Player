@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/578d73a422.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-blue-600">
+    <div class="flex justify-center items-center h-screen">
+        <div class="bg-pink-200 mx-auto w-48 p-4">
+            <nav class="flex justify-between mb-3">
+                <div class=""><i class="fa-solid fa-angle-left  bg-white rounded-full px-3 py-2 shadow-xl"></i></div>
+                <div><i class="fa-solid fa-bars bg-white rounded-full px-2 py-2 shadow-xl"></i></div>
+            </nav>
+            <img src="Media/photo-1494232410401-ad00d5433cfa.avif" alt="" class="rounded-full  shadow-xl border-2 border-white">
+           <h1 class="text-center">Closer</h1>
+           <p class="font-light text-center text-xs">The Chainsmokers</p>
+           <br>
+           <div class="flex justify-center items-center">
+                <audio id="song" class="w-full" >
+                    <source src="Media/The Chainsmokers - Closer (Lyric) ft. Halsey.mp3" type="audio/mp3">
+                </audio>
+                <input type="range" id="progress" value="0" class="appearance-none h-1 bg-white cursor-pointer  rounded-full border-1">
+            </div>
+            <br>
+            <div class="flex justify-center items-center">
+                <div class="mx-2"><i class="fa-solid fa-backward px-2 rounded-full bg-white py-2 items-center hover:bg-pink-100 cursor-pointer" id="backward"></i></div>
+                <div class="mx-2"><i class="fa-solid fa-play px-2 rounded-full bg-white py-2 items-center hover:bg-pink-100 cursor-pointer" onclick="playPause()" id="ctrlIcon"></i></div>
+                <div class="mx-2"><i class="fa-solid fa-forward px-2 rounded-full bg-white py-2 items-center hover:bg-pink-100 cursor-pointer" id="forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
